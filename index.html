@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berix - ESN Tech & Humaine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #1d1d1f;
+    }
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #1d1d1f;
+      font-weight: 600;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px;
+      background: url('background-hero.png') center/cover no-repeat;
+      background-size: cover;
+    }
+    .hero h1, .hero p {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 10px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      color: #0033a0;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 700px;
+      font-size: 20px;
+    }
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .section img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+    }
+    .text-block {
+      flex: 1;
+      min-width: 280px;
+    }
+    .text-block h2 {
+      font-size: 32px;
+      color: #0033a0;
+      margin-bottom: 20px;
+    }
+    .text-block p, .text-block ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    footer {
+      background: #0033a0;
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-berix.png" alt="Berix Logo">
+    <nav>
+      <a href="#presentation">Présentation</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#rse">RSE</a>
+      <a href="#jobs">Offres d'emploi</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>La Tech en confiance</h1>
+    <p>Berix est une ESN humaine et engagée, spécialisée en développement, DevOps et agilité. Nous construisons des solutions durables avec nos clients et consultants.</p>
+  </section>
+
+  <section class="section" id="presentation">
+    <div class="text-block">
+      <h2>Présentation</h2>
+      <p>Basée à Rennes, Berix est née de la volonté de proposer une alternative humaine et transparente dans le monde du numérique. Nous valorisons l’écoute, la proximité et l’autonomie. Chaque projet est une aventure collective menée avec sérieux, enthousiasme et bienveillance.</p>
+    </div>
+    <img src="background-presentation.png" alt="Présentation visuelle">
+  </section>
+
+  <section class="section" id="expertise">
+    <div class="text-block">
+      <h2>Expertise</h2>
+      <ul>
+        <li><strong>Développement logiciel</strong> : front-end, back-end, fullstack</li>
+        <li><strong>DevOps & Cloud</strong> : CI/CD, conteneurisation, IaC, monitoring</li>
+        <li><strong>Agilité & Produit</strong> : Scrum, PO, coaching agile</li>
+        <li><strong>Data & IA</strong> : valorisation des données, BI (à venir)</li>
+      </ul>
+    </div>
+    <img src="background-expertise.png" alt="Expertise visuelle">
+  </section>
+
+  <section class="section" id="rse">
+    <div class="text-block">
+      <h2>Notre engagement RSE</h2>
+      <ul>
+        <li>Favoriser la diversité & égalité des chances</li>
+        <li>Formation continue des consultants</li>
+        <li>Projets à impact positif</li>
+        <li>Empreinte numérique responsable</li>
+      </ul>
+    </div>
+    <img src="background-rse.png" alt="Engagement RSE visuel">
+  </section>
+
+  <section class="section" id="jobs">
+    <div class="text-block">
+      <h2>Offres d'emploi</h2>
+      <ul>
+        <li><strong>Développeur Full Stack Java</strong></li>
+        <li><strong>Développeur Back Java</strong></li>
+        <li><strong>Tech Lead Java</strong></li>
+        <li><strong>Développeur Full Stack .Net</strong></li>
+        <li><strong>Développeur Mobile</strong></li>
+        <li><strong>Ingénieur DevOps</strong></li>
+      </ul>
+      <p>📩 Candidature à : <a href="mailto:recrutement@berix.bzh">recrutement@berix.bzh</a></p>
+    </div>
+    <img src="background-hero.png" alt="Jobs visuel">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Berix - berix.bzh - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
