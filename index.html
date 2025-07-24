@@ -53,30 +53,33 @@
       font-size: 20px;
     }
     .section {
-      position: relative;
-      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
       padding: 80px 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
-    .section::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(255, 255, 255, 0.85);
-      z-index: -1;
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
     }
-    #presentation { background: url('background-presentation.png') center/cover no-repeat; }
-    #expertise { background: url('background-expertise.png') center/cover no-repeat; }
-    #rse, #jobs { background: url('background-rse.png') center/cover no-repeat; }
-
-    .section h2 {
+    .section img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+    }
+    .text-block {
+      flex: 1;
+      min-width: 280px;
+    }
+    .text-block h2 {
       font-size: 32px;
       color: #0033a0;
       margin-bottom: 20px;
     }
-    .section p, .section ul {
+    .text-block p, .text-block ul {
       font-size: 18px;
       line-height: 1.6;
     }
@@ -86,7 +89,21 @@
       padding: 40px 20px;
       text-align: center;
     }
-  </style>
+  
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .section img {
+        max-width: 90%;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+</style>
 </head>
 <body>
   <header>
@@ -105,41 +122,53 @@
   </section>
 
   <section class="section" id="presentation">
-    <h2>Présentation</h2>
-    <p>Basée à Rennes, Berix est née de la volonté de proposer une alternative humaine et transparente dans le monde du numérique. Nous valorisons l’écoute, la proximité et l’autonomie. Chaque projet est une aventure collective menée avec sérieux, enthousiasme et bienveillance.</p>
+    <div class="text-block">
+      <h2>Présentation</h2>
+      <p>Basée à Rennes, Berix est née de la volonté de proposer une alternative humaine et transparente dans le monde du numérique. Nous valorisons l’écoute, la proximité et l’autonomie. Chaque projet est une aventure collective menée avec sérieux, enthousiasme et bienveillance.</p>
+    </div>
+    <img src="background-presentation.png" alt="Présentation visuelle">
   </section>
 
   <section class="section" id="expertise">
-    <h2>Expertise</h2>
-    <ul>
-      <li><strong>Développement logiciel</strong> : front-end, back-end, fullstack</li>
-      <li><strong>DevOps & Cloud</strong> : CI/CD, conteneurisation, IaC, monitoring</li>
-      <li><strong>Agilité & Produit</strong> : Scrum, PO, coaching agile</li>
-      <li><strong>Data & IA</strong> : valorisation des données, BI (à venir)</li>
-    </ul>
+    <div class="text-block">
+      <h2>Expertise</h2>
+      <ul>
+        <li><strong>Développement logiciel</strong> : front-end, back-end, fullstack</li>
+        <li><strong>DevOps & Cloud</strong> : CI/CD, conteneurisation, IaC, monitoring</li>
+        <li><strong>Agilité & Produit</strong> : Scrum, PO, coaching agile</li>
+        <li><strong>Data & IA</strong> : valorisation des données, BI (à venir)</li>
+      </ul>
+    </div>
+    <img src="background-expertise.png" alt="Expertise visuelle">
   </section>
 
   <section class="section" id="rse">
-    <h2>Notre engagement RSE</h2>
-    <ul>
-      <li>Favoriser la diversité & égalité des chances</li>
-      <li>Formation continue des consultants</li>
-      <li>Projets à impact positif</li>
-      <li>Empreinte numérique responsable</li>
-    </ul>
+    <div class="text-block">
+      <h2>Notre engagement RSE</h2>
+      <ul>
+        <li>Favoriser la diversité & égalité des chances</li>
+        <li>Formation continue des consultants</li>
+        <li>Projets à impact positif</li>
+        <li>Empreinte numérique responsable</li>
+      </ul>
+    </div>
+    <img src="background-rse.png" alt="Engagement RSE visuel">
   </section>
 
   <section class="section" id="jobs">
-    <h2>Offres d'emploi</h2>
-    <ul>
-      <li><strong>Développeur Full Stack Java</strong></li>
-      <li><strong>Développeur Back Java</strong></li>
-      <li><strong>Tech Lead Java</strong></li>
-      <li><strong>Développeur Full Stack .Net</strong></li>
-      <li><strong>Développeur Mobile</strong></li>
-      <li><strong>Ingénieur DevOps</strong></li>
-    </ul>
-    <p>📩 Candidature à : <a href="mailto:recrutement@berix.bzh">recrutement@berix.bzh</a></p>
+    <div class="text-block">
+      <h2>Offres d'emploi</h2>
+      <ul>
+        <li><strong>Développeur Full Stack Java</strong></li>
+        <li><strong>Développeur Back Java</strong></li>
+        <li><strong>Tech Lead Java</strong></li>
+        <li><strong>Développeur Full Stack .Net</strong></li>
+        <li><strong>Développeur Mobile</strong></li>
+        <li><strong>Ingénieur DevOps</strong></li>
+      </ul>
+      <p>📩 Candidature à : <a href="mailto:recrutement@berix.bzh">recrutement@berix.bzh</a></p>
+    </div>
+    <img src="background-hero.png" alt="Jobs visuel">
   </section>
 
   <footer>
