@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expertise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html { font-size: 16px; }
+    body, p, li { font-size: 1rem; line-height: 1.6; }
+    h1 { font-size: 2rem; margin-bottom: 20px; }
+    h2 { font-size: 1.3rem; margin-top: 40px; }
+    ul { padding-left: 1.2rem; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #1d1d1f;
+    }
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    header img {
+      height: 120px;
+    }
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #1d1d1f;
+      font-weight: 600;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 60px;
+    }
+    .intro {
+      max-width: 900px;
+      margin: 20px auto 40px auto;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .expertise-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px 60px;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .column {
+      flex: 1;
+    }
+    .column img {
+      max-width: 100%;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 40px;
+    }
+    footer {
+      background: #0033a0;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+@media (max-width: 768px) {
+  .expertise-container,
+  .rejoignez-container,
+  .section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header img {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  nav a {
+    margin: 0;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo-berix.png" alt="Berix Logo">
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="rejoignez-nous.html">Rejoignez-nous</a>
+    <a href="rse.html">RSE</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<h1>Nos expertises</h1>
+<div class="intro">
+  Chez Berix, la culture Agile, Digitale et DevOps structure l’ensemble de nos offres.<br>
+  Nous accompagnons nos clients sur l’ensemble de la chaîne de valeur du développement logiciel et de la transformation numérique.
+</div>
+
+<div class="expertise-container">
+  <div class="column">
+    <h2>🌐 Software & Cloud</h2>
+    <ul>
+      <li>Architecture logicielle</li>
+      <li>Développement backend & frontend</li>
+      <li>Expertise web et mobile</li>
+      <li>Intégration continue</li>
+      <li>Applications multi-plateformes</li>
+      <li>Environnements cloud (AWS, Azure, GCP)</li>
+      <li>Containerisation (Docker, Kubernetes)</li>
+    </ul>
+
+    <h2>🔧 DevOps & Systèmes</h2>
+    <ul>
+      <li>Automatisation de déploiement</li>
+      <li>Infrastructure as Code (Terraform, Ansible)</li>
+      <li>Supervision, monitoring</li>
+      <li>Sécurité et performance</li>
+    </ul>
+  </div>
+
+  <div class="column">
+    <img src="background-expertise.png" alt="Expertise Berix">
+  </div>
+
+  <div class="column">
+    <h2>🧠 Conseil & Pilotage</h2>
+    <ul>
+      <li>Product Ownership (PO)</li>
+      <li>Scrum Mastering</li>
+      <li>Chefferie de projet</li>
+      <li>Coaching agile et accompagnement au changement</li>
+    </ul>
+
+    <h2>🎯 Notre valeur ajoutée</h2>
+    <p>Nos équipes répondent à toutes les problématiques que vous pouvez rencontrer :</p>
+    <ul>
+      <li>Conception de produits sur-mesure</li>
+      <li>Définition et mise en place d’architectures logicielles robustes</li>
+      <li>Accélération des cycles de développement</li>
+      <li>Automatisation de la chaîne DevOps</li>
+      <li>Conseil et audits techniques ou organisationnels</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Berix - berix.bzh</p>
+</footer>
+</body>
+</html>
